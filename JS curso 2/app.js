@@ -10,7 +10,7 @@
 // Aqui eu to em dúvida do pq não funfa por o nome da variavel dentro dos parenteses. E pq funfa o nome das variaveis serem o msm
 
 let listaDeNumerosSorteados = [];
-let numeroLimite = 10;
+let numeroLimite = 100;
 let numeroSecreto = gerarNumAleatorio();
 let tentativas = 1;
 exibirMensagemInicial();
@@ -49,7 +49,7 @@ function verificarChute () {
 }
 
 mudarTextoTela('h1', 'Jogo do número secreto');
-mudarTextoTela('p', 'Escolha um número de 1 a 10:');
+mudarTextoTela('p', 'Escolha um número de 1 a 100:');
 
 // o RETURN permite eu invocar algo para fora da função. Posso usar mais de um RETURN, mas só um pode ser executado! tipo, usar um IF/ELSE, só um deles vai ser executado
 function gerarNumAleatorio () {
@@ -78,7 +78,7 @@ function limparCampo () {
 
 function exibirMensagemInicial() {
     mudarTextoTela('h1', 'Jogo do número secreto');
-    mudarTextoTela('p', 'Escolha um número de 1 a 10:');
+    mudarTextoTela('p', 'Escolha um número de 1 a 100:');
 }
 
 function reiniciarJogo() {
